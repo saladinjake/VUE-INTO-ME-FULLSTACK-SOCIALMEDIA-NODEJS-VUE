@@ -1,5 +1,5 @@
-// import { GuestService } from '../services/virtualsports/football/guest.service';
-export default class GuestController{
+import { GuestService } from '../services/guest.service';
+export class GuestController{
    static async index(request, response){
   }
   static async about(request,response){

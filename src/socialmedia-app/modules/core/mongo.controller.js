@@ -1,13 +1,13 @@
-// import { AuthController } from '../../auth/controllers/auth.controller';
-// import  GuestController  from '../auth/controllers/guest.controller';
+import { AuthController } from '../auth/controllers/auth.controller';
+import { GuestController  } from '../auth/controllers/guest.controller';
 
 
 export default {
   AuthMapper: {
-    // AuthController,
+    AuthController,
   },
   GuestMapper: {
-    // GuestController,
+    GuestController,
   },
 
   AdminControllers:{
