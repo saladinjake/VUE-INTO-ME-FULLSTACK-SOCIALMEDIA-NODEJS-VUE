@@ -1,0 +1,119 @@
+{
+  "name": "node-es6-starter",
+  "version": "1.0.0",
+  "description": "Node.js ES6+ starter with Babel & ESLint",
+  "main": "lib/index.js",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "6.1.0"
+          },
+          "corejs": "3",
+          "useBuiltIns": "usage"
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ],
+        "presets": [
+          [
+            "@babel/preset-env"
+          ]
+        ]
+      }
+    }
+  },
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "eslintConfig": {
+    "extends": "airbnb/base",
+    "env": {
+      "node": true,
+      "mocha": true
+    }
+  },
+  "scripts": {
+    "lint": "eslint src/**",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build",
+    "start": "node lib/",
+    "dev": "babel-node src/",
+    "test": "NODE_ENV=test nyc mocha",
+    "test-cov": "NODE_ENV=test nyc --check-coverage --lines 60 mocha && nyc report --reporter=lcov"
+  },
+  "engines": {
+    "node": ">=6.1.0",
+    "npm": ">=3.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saladinjake/socialmedia-app-node-mongo-vue.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "N. Palani Kumanan",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/register": "^7.8.6",
+    "babel-plugin-istanbul": "^5.2.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "expect": "^26.0.1"
+
+
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "aws-sdk": "^2.686.0",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.26.0",
+    "mongodb": "^3.5.7",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.7",
+    "socket.io": "2.3.0",
+    "validator": "^13.0.0"
+
+  }
+}
