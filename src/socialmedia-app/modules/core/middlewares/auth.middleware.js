@@ -1,8 +1,4 @@
 import jwt from 'jsonwebtoken';
-// import { ResponseHandler } from '../helpers/response_handler';
-
-
-
 
 export const verifyToken = (request,response,next) => {
   const token = request.headers('x-access-token');
@@ -16,7 +12,7 @@ export const verifyToken = (request,response,next) => {
     )
   }else{
     try{
-      const decode = jwt.verify(token,ENCRYPTION_KEY);
+      const decode = jwt.verify(token,process.env.SECRET_KEY);
       requet.user = decode;
       return next();
    }catch (err){

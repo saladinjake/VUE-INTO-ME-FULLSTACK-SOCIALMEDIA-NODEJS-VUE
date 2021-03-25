@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import  Controllers  from '../../../socialmedia-app/modules/core/mongo.controller';
-import  Middlewares  from '../../../socialmedia-app/modules/core/mongo.middlewares';
+import  Controllers  from '../../../modules/core/mongo.controller';
+import  Middlewares  from '../../../modules/core/mongo.middlewares';
 
 const AuthSanitizer = Middlewares.AuthSanitizer;
 const AuthController = Controllers.AuthController;

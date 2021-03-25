@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import  Controllers  from '../../../socialmedia-app/modules/core/mongo.controller';
+import  Controllers  from '../../../modules/core/mongo.controller';
 const  GuestController =  Controllers.GuestController;
 
 const ABOUT_LINK = '/guest/about';
