@@ -1,9 +1,13 @@
-// import AuthService from '../services/core/auth.service';
 // import { TokenGenerator } from '../utils/tokengen.utils';
 // import Response from '../../../utils/response.utils';
 // const response = new Response();
+import { BaseController } from '../../core/mongo.controller';
+import AuthService from '../services/auth.service';
 
-export default class AuthController{
+export default class AuthController extends BaseController{
+  constructor(){
+    super();
+  }
   static async signup(req, res) {
   }
   static async login(req,res){

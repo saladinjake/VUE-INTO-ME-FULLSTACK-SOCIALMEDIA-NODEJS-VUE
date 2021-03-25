@@ -1,4 +1,6 @@
 import { GuestService } from '../services/guest.service';
+import { BaseController } from '../../core/mongo.controller';
+
 export class GuestController{
    static async index(request, response){
   }
