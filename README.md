@@ -1,26 +1,17 @@
 # node-es6-starter
 Node.js ES6+ starter with [Babel.js](https://babeljs.io/), [ESLint](http://eslint.org/) & [nyc](https://github.com/istanbuljs/nyc) with minimal setup.
 
-1. Write node.js source code in ES6 syntax.
-2. Unit test the source code.
-3. Transpile to ES5.
-4. Publish ES5 code to NPM.
+A social media application with nodejs mongodb and vue js. from authentication, realtime chat and more.. Basically meets the need to show how building enterprise software on aws can be done with code modularization, oop encapsulation A prototype of a complex application structure .and bla bla bla. just take it.
 
 ## Motivation
 
 I created this repo to use it as a starting point for build npm libaries using ES6 (& beyond) syntax & features.
-
-The current, stable version of [node.js](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V12.md#12.16.1) supports [99%](http://node.green/) ES6 (aka ES2015) [features](https://github.com/lukehoban/es6features). But behind with newer specs - ES2016 (ES7), ES2017 (ES8), ES2018 (ES9), ES2019 (ES10)...
-
-We also build npm modules to run on older versions of Node.js.
+work in progress to provide enterprise solution for free
 
 ### Configuration
 
-All configuration settings for dev/build tools are defined in [package.json](package.json) eliminating the dependency of addtional tool specific configuration files such as `.babelrc`, `.eslintrc`, `.nycrc` etc.
-
 ### Babel.js
 
-We will use Babel.js with [ES2015 preset](https://babeljs.io/docs/en/babel-preset-env) to transpile ES6 code to ES5.
 
 ### Coding style
 
@@ -28,15 +19,9 @@ Airbnb has an excellent [style guide](https://github.com/airbnb/javascript) for 
 
 ### ESLint
 
-We will use ESLint](http://eslint.org/) with Airbnb style and pre-parse our code to detect violations of the style.
 
 ### Unit testing
 
-Prefer running tests on the source code rather than on the transpiled code. 
-
-Using [chai](https://www.chaijs.com/) assertation library with [mocha](https://mochajs.org/) test framework for unit testing.
-
-Also using [nyc](https://github.com/istanbuljs/nyc), to instrument ES6 source code for tests and to generate coverage reports.
 
 
 ## Quick Start
@@ -94,19 +79,6 @@ npm start
 ```
 
 
-### Preview Publish
-```
-npm pack
-tar -tf node-es6-starter-1.0.0.tgz
-```
-
-### Publish to npm registry
-Registry is specifed in [package.json](package.json) `publishConfig` entry
-
-**Delete the `.tgz` file before publishing**.
-```
-npm publish
-```
 
 ## Code Directories
 
