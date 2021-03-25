@@ -5,14 +5,12 @@ const router = Router();
 
 export class BaseRouter{
  constructor(){
-   // this.coreRoutes = routes(router) || {};
-   // this.postgresRoutes = pgRoutes(router) || {};
+   //IF YOU HAVE GOT MICROSERVICES ADD THEM FOR  DIFFERENT DATABASES ROUTES
    this.mongoRoutes = mongoRoute(router) || {};
    // console.log(this.mongoRoutes)
  }
 
  init(){
-
     initializeMongoRoutes(this.mongoRoutes)
  }
 

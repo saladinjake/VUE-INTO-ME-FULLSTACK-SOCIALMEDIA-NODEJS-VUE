@@ -4,11 +4,10 @@ import express , { Router } from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 // import helmet from 'helmet';
-
 import { BaseRouter } from './router/base.routes';
 let env = process.env.NODE_ENV || 'DEVELOPMENT';
-let settings = require('./config/app')
-settings = settings.DEVELOPMENT;
+// let settings = require('./config/app')
+// settings = settings.DEVELOPMENT;
 // console.log(settings, env)
 
 // require('../models/mongo/database')(settings)
@@ -34,7 +33,6 @@ export class App{
     this.port = process.env.PORT || 3001;
     this.express.use('/api/v1', this.routes)
   }
-
   run(){
     this.express.listen(this.port,()=>{
       console.log("Turring api service for node js on port:"+ this.port)
