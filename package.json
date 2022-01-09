@@ -75,7 +75,6 @@
     "coveralls": "^3.1.0",
     "cross-env": "^7.0.2",
     "debug": "^4.2.0",
-    "dotenv": "^8.2.0",
     "helmet": "^4.1.1",
     "http-errors": "^1.8.0",
     "istanbul": "^0.4.5",
