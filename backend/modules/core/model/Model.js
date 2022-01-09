@@ -3,7 +3,7 @@ const MongoConfig = require('../config/mongoDB');
 const DbConnector = require('../server');
 
 /****************************************************************/
-/******* @author Ilori Stephen A ********************************/
+/******* @author saladin jake victor juwa ********************************/
 /******* @desc Model Base Class : Povides resuable **************/
 /******* Methods for woking with our database *******************/
 /****************************************************************/

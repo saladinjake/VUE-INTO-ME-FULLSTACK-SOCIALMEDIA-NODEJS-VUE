@@ -14,7 +14,7 @@ import ExpressFileUpload from "express-fileupload"
 /******* @desc Custom Application Modules ***********************/
 /****************************************************************/
 import AppConfigurations from "./config/app"
-import MongoConnector from "./mongo/Model"
+import MongoConnector from "./modules/core/model/Model"
 // const CorsConfigurations = require('./config/cors');
 /****************************************************************/
 /******* @author saladin jake (Victor juwa) ********************************/
@@ -37,12 +37,10 @@ module.exports.connector = (async () => {
   return Connection.dbConnector();
 })();
 /************* Database Connector ************/
-
 /****************************************************************/
 /******* @author saladin jake (Victor juwa) ********************************/
 /******* @desc Express Routes ***********************************/
 /****************************************************************/
-
 Server.listen(AppConfigurations.appConfig.appPort, () => {
   console.log(AppConfigurations.appConfig.appName + ` api is running on ` + AppConfigurations.appConfig.appPort);
 });

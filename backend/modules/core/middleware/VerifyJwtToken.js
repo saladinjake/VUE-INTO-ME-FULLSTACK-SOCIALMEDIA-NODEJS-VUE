@@ -1,10 +1,10 @@
-const Jwt = require('jsonwebtoken');
 
-const Middleware = require('./Middleware');
-const Model = require('../model/Model');
-const AdminLoginModel = require('../model/AdminLoginModel');
+import Middleware from './Middleware';
+import Jwt from 'jsonwebtoken';
+import AdminLoginModel from '../model/AdminLoginModel';
+import Model from '../model/Model';
 /****************************************************************/
-/******* @author Ilori Stephen A ********************************/
+/******* @author saladin jake victor juwa ********************************/
 /******* @desc Controller Base Class : Povides resuable *********/
 /******* Methods for woking with our Middleware Class ***********/
 /****************************************************************/
