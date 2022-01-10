@@ -7,9 +7,9 @@
   "scripts": {
     "mocha": "mocha --compilers js:babel-register",
     "babel-node": "babel-node -- src/app.js",
-    "start": "export NODE_ENV=PRODUCTION || set NODE_ENV=PRODUCTION && npm run babel-node -- src/app.js",
-    "start:dev": "export NODE_ENV=DEVELOPMENT || set NODE_ENV=DEVELOPMENT && npm run babel-node -- src/app.js",
-    "start:debug": "export NODE_ENV=DEVELOPMENT || set NODE_ENV=DEVELOPMENT && nodemon --exec babel-node -- src/app.js",
+    "start": "export NODE_ENV=PRODUCTION || set NODE_ENV=PRODUCTION && npm run babel-node -- backend/server.js",
+    "start:dev": "export NODE_ENV=DEVELOPMENT || set NODE_ENV=DEVELOPMENT && npm run babel-node -- backend/server.js",
+    "start:debug": "export NODE_ENV=DEVELOPMENT || set NODE_ENV=DEVELOPMENT && nodemon --exec  ./node_modules/.bin/babel-node  -- backend/server.js",
     "build": "babel ./ -d dist",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "coverage": "nyc reports --reporter=text-lcov | coveralls",

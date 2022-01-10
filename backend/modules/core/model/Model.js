@@ -1,6 +1,6 @@
 const {MongoClient, ObjectId} = require('mongodb');
-const MongoConfig = require('../config/mongoDB');
-const DbConnector = require('../server');
+const MongoConfig = require('../../../config/mongoDB');
+const DbConnector = require('../../../server');
 
 /****************************************************************/
 /******* @author saladin jake victor juwa ********************************/
