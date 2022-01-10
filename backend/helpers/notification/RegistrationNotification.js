@@ -1,5 +1,5 @@
 const Notification = require(__dirname + '/Notification');
-const Transport = require('../config/mail');
+const Transport = require('../../config/mail');
 
 class RegisterNotification extends Notification {
   constructor(payload) {

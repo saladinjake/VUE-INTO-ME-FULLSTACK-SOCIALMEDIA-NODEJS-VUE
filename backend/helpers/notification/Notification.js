@@ -1,4 +1,4 @@
-const Transport = require('../config/mail');
+const Transport = require('../../config/mail');
 
 /****************************************************************/
 /******* @author saladin jake (Victor juwa) ********************************/
