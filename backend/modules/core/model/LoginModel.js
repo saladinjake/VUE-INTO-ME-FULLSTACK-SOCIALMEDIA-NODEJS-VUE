@@ -6,12 +6,10 @@ import Model from './Model';
 /******* @desc LoginModel: Provides Methods For ******************/
 /******* Authenticating Creating New Users ***********************/
 /****************************************************************/
-
 class LoginModel extends Model {
   constructor() {
     super();
   }
-
   /****************************************************************/
   /******* @author saladin jake victor juwa ********************************/
   /******* @desc LoginModel: Check A User Record ******************/

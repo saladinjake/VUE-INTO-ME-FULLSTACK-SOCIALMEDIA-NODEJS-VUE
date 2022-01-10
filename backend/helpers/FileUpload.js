@@ -8,11 +8,11 @@ import FfmpegCommand from "fluent-ffmpeg";
 import AwsConfig from "../config/amazon";
 import AppConfig from "../config/app";
 import TokenHelper from "./TokenHelper"
-import PostModel from '../model/PostModel';
-import UserModel from '../model/UserModel';
+import PostModel from '../modules/core/model/PostModel';
+import UserModel from '../modules/core/model/UserModel';
 import GroupModel from '../model/GroupModel';
-import GalleryModel from '../model/GalleryModel';
-import AdvertModel from '../model/AdvertModel';
+import GalleryModel from '../modules/core/model/GalleryModel';
+import AdvertModel from '../modules/core/model/AdvertModel';
 /****************************************************************/
 /******* @author saladin jake victor juwa ********************************/
 /******* @desc  Modules. ****************************************/
