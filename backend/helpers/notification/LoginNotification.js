@@ -46,7 +46,7 @@ class LoginNotification extends Notification {
       <head>
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Naijap Congratulates You For Creating An Account</title>
+        <title>SocialMugap Congratulates You For Creating An Account</title>
         <style>
           /* -------------------------------------
               GLOBAL RESETS
@@ -788,7 +788,7 @@ class LoginNotification extends Notification {
         </style>
       </head>
       <body class="">
-        <span class="preheader">Your Naijap Account Has Been Suspended</span>
+        <span class="preheader">Your  Account Has Been Suspended</span>
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
           <tr>
             <td>&nbsp;</td>
