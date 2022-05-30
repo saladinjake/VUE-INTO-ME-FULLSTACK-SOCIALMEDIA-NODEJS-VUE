@@ -15,11 +15,7 @@ const AllowedStagingUrl = [
   'https://sociallitetester-app.heroku.com', 
 ];
 const AllowedProductionUrl =[
-'https://www.naijap.pixietech.net',
-'https://naijap.pixietech.net', 
-'http://www.naijap.pixietech.net', 
-'http://naijap.pixietech.net', 
-'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com'
+ 'http://127.0.0.1:8080' 
 ];
 const Whitelist = [...AllowedDevUrl,...AllowedStagingUrl,...AllowedProductionUrl];
 const CorsOption = function (req, callback) {
