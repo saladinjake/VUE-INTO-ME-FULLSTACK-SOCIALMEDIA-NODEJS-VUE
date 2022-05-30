@@ -1,7 +1,7 @@
 {
   "name": "social-app",
   "version": "1.0.0",
-  "description": "A microservice for powering the naijap -social media  web app and android app",
+  "description": "A microservice for powering the  -social media  web app and android app",
   "main": "server.js",
  
   "scripts": {
