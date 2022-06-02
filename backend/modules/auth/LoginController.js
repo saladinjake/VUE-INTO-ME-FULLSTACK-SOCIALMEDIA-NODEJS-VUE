@@ -5,10 +5,10 @@ const Validator = require('validator');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const TokenModel = require('../../model/TokenModel');
-const LoginModel = require('../../model/LoginModel');
-const LoginNotification = require('../../notification/LoginNotification');
+const Controller = require('../core/controllers/Controller');
+const TokenModel = require('../core/model/TokenModel');
+const LoginModel = require('../core/model/LoginModel');
+const LoginNotification = require('../../helpers/notification/LoginNotification');
 
 class LoginController extends Controller {
     constructor() {
@@ -61,7 +61,7 @@ class LoginController extends Controller {
 
                 const MailPayload = {
                     sender_name: 'Naijap',
-                    sender_email: 'stephenilori458@gmail.com',
+                    sender_email: 'juwavictor@gmail.com',
                     receiver_name: user.lastName + ' ' + user.firstName,
                     receiver_email: user.email,
                     name: user.lastName + ' ' + user.firstName,
@@ -94,7 +94,7 @@ class LoginController extends Controller {
 
                 const MailPayload = {
                     sender_name: 'Naijap',
-                    sender_email: 'stephenilori458@gmail.com',
+                    sender_email: 'juwavictor@gmail.com',
                     receiver_name: user.lastName + ' ' + user.firstName,
                     receiver_email: user.email,
                     name: user.lastName + ' ' + user.firstName,

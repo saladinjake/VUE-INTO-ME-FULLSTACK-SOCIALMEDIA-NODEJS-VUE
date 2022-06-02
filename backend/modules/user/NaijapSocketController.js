@@ -2,12 +2,12 @@ const _ = require('lodash');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const ChatModel = require('../../model/ChatModel');
-const UserModel = require('../../model/UserModel');
-const NaijapModel = require('../../model/NaijapModel');
-const ConnectionModel = require('../../model/ConnectionModel');
-const NaijapNotificationModel = require('../../model/NaijapNotificationModel');
+const Controller = require('../core/controllers/Controller');
+const ChatModel = require('../core/model/ChatModel');
+const UserModel = require('../core/model/UserModel');
+const NaijapModel = require('../core/model/NaijapModel');
+const ConnectionModel = require('../core/model/ConnectionModel');
+const NaijapNotificationModel = require('../core/model/NaijapNotificationModel');
 
 class NaijapSocketController extends Controller {
   constructor() { super() }

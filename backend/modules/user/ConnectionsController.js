@@ -2,10 +2,10 @@ const _ = require('lodash');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const PostModel = require('../../model/PostModel');
-const ConnectionModel = require('../../model/ConnectionModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const PostModel = require('../core/model/PostModel');
+const ConnectionModel = require('../core/model/ConnectionModel');
 
 class ConnectionsController extends Controller {
     constructor() { super() }

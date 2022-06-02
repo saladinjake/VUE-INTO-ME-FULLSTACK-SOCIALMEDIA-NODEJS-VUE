@@ -2,10 +2,10 @@ const _ = require('lodash');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const PostModel = require('../../model/PostModel');
-const GalleryModel = require('../../model/GalleryModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const PostModel = require('../core/model/PostModel');
+const GalleryModel = require('../core/model/GalleryModel');
 
 class GalleryController extends Controller {
   constructor() { super() }

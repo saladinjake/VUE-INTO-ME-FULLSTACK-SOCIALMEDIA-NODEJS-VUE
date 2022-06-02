@@ -4,8 +4,8 @@ const Validator = require('validator');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
 
 class UserController extends Controller {
   constructor() { super() }

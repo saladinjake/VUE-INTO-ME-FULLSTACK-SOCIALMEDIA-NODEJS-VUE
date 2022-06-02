@@ -3,11 +3,11 @@ const Axios = require('axios');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const AdvertModel = require('../../model/AdvertModel');
-const SettingsModel = require('../../model/SettingModel');
-const TransactionsModel = require('../../model/TransactionsModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const AdvertModel = require('../core/model/AdvertModel');
+const SettingsModel = require('../core/model/SettingModel');
+const TransactionsModel = require('../core/model/TransactionsModel');
 
 class TransactionsController extends Controller {
   constructor() { super() }

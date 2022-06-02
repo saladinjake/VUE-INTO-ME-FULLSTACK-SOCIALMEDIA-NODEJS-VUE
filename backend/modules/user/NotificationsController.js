@@ -2,10 +2,10 @@ const _ = require('lodash');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const ConnectionModel = require('../../model/ConnectionModel');
-const NotificationsModel = require('../../model/NaijapNotificationModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const ConnectionModel = require('../core/model/ConnectionModel');
+const NotificationsModel = require('../core/model/NaijapNotificationModel');
 
 class NotificationsController extends Controller {
   constructor() { super() }

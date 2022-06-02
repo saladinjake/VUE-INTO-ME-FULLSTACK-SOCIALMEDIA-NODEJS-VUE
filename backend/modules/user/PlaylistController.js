@@ -3,12 +3,12 @@ const _ = require('lodash');
 /************   Custom Module Imports      *********************/
 /****************************************************************/
 
-const PostModel = require('../../model/PostModel');
-const UserModel = require('../../model/UserModel');
-const PostActivityModel = require('../../model/PostActivityModel');
-const PlaylistModel = require('../../model/PlaylistModel');
+const PostModel = require('../core/model/PostModel');
+const UserModel = require('../core/model/UserModel');
+const PostActivityModel = require('../core/model/PostActivityModel');
+const PlaylistModel = require('../core/model/PlaylistModel');
 
-const Controller = require('../Controller');
+const Controller = require('../core/controllers/Controller');
 
 class PlaylistController extends Controller {
     constructor() { super(); }

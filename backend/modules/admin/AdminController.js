@@ -5,8 +5,8 @@ const Validator = require('validator');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const AdminLoginModel = require('../../model/AdminLoginModel');
+const Controller = require('../core/controllers/Controller');
+const AdminLoginModel = require('../core/model/AdminLoginModel');
 
 class AdminController extends Controller {
   constructor() {

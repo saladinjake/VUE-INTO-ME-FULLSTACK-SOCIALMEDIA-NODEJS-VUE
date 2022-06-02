@@ -1,10 +1,10 @@
 const _ = require('lodash');
 const Jwt = require('jsonwebtoken');
 
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const PostModel = require('../../model/PostModel');
-const CategoryModel = require('../../model/CategoryModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const PostModel = require('../core/model/PostModel');
+const CategoryModel = require('../core/model/CategoryModel');
 
 class CategoryController extends Controller {
   constructor() { super() }

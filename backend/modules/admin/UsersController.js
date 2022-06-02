@@ -4,10 +4,10 @@ const Jwt = require('jsonwebtoken');
 const CryptoJS = require("crypto-js");
 const Validator = require('validator');
 
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const PostModel = require('../../model/PostModel');
-const RegisterModel = require('../../model/RegisterModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const PostModel = require('../core/model/PostModel');
+const RegisterModel = require('../core/model/RegisterModel');
 
 class UsersController extends Controller {
     constructor() { super() }
@@ -615,7 +615,7 @@ class UsersController extends Controller {
 
         // const MailPayload = {
         //   sender_name: 'Naijap',
-        //   sender_email: 'stephenilori458@gmail.com',
+        //   sender_email: 'juwavictor@gmail.com',
         //   receiver_name: lastName + ' ' + firstName,
         //   receiver_email: email,
         //   subject: `Congratulations ${lastName} ${firstName} On Creating An Account With Naijap`,

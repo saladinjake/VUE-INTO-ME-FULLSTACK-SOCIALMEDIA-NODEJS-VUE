@@ -2,10 +2,10 @@ const _ = require('lodash');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const PostModel = require('../../model/PostModel');
-const GroupModel = require('../../model/GroupModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const PostModel = require('../core/model/PostModel');
+const GroupModel = require('../core/model/GroupModel');
 
 class GroupController extends Controller {
   constructor() {

@@ -5,10 +5,10 @@ const Validator = require('validator');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const TokenModel = require('../../model/TokenModel');
-const UserModel = require('../../model/RegisterModel');
-const RegistrationNotification = require('../../notification/RegistrationNotification');
+const Controller = require('../core/controllers/Controller');
+const TokenModel = require('../core/model/TokenModel');
+const UserModel = require('../core/model/RegisterModel');
+const RegistrationNotification = require('../../helpers/notification/RegistrationNotification');
 
 class UserController extends Controller {
   constructor() {
@@ -194,7 +194,7 @@ class UserController extends Controller {
 
       const MailPayload = {
         sender_name: 'Naijap',
-        sender_email: 'stephenilori458@gmail.com',
+        sender_email: 'juwavictor@gmail.com',
         receiver_name: lastName + ' ' + firstName,
         receiver_email: email,
         subject: `Congratulations ${lastName} ${firstName} On Creating An Account With Naijap`,
@@ -271,7 +271,7 @@ class UserController extends Controller {
 
         const MailPayload = {
           sender_name: 'Naijap',
-          sender_email: 'stephenilori458@gmail.com',
+          sender_email: 'juwavictor@gmail.com',
           receiver_name: user.lastName + ' ' + user.firstName,
           receiver_email: user.email,
           name: user.lastName + ' ' + user.firstName,
@@ -364,7 +364,7 @@ class UserController extends Controller {
 
         const MailPayload = {
           sender_name: 'Naijap',
-          sender_email: 'stephenilori458@gmail.com',
+          sender_email: 'juwavictor@gmail.com',
           receiver_name: checkEmail.lastName + ' ' + checkEmail.firstName,
           receiver_email: checkEmail.email,
           name: checkEmail.lastName + ' ' + checkEmail.firstName,

@@ -2,13 +2,13 @@ const _ = require('lodash');
 const {ObjectId} = require('mongodb');
 const Validator = require('validator');
 
-const UserModel = require('../../model/UserModel');
-const PostModel = require('../../model/PostModel');
-const ContestModel = require('../../model/ContestModel');
+const UserModel = require('../core/model/UserModel');
+const PostModel = require('../core/model/PostModel');
+const ContestModel = require('../core/model/ContestModel');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
+const Controller = require('../core/controllers/Controller');
 
 class AdminContestController extends Controller {
   constructor() {

@@ -5,10 +5,10 @@ const Validator = require('validator');
 /****************************************************************/
 /************   Custom Module Imports      *********************/
 /****************************************************************/
-const Controller = require('../Controller');
-const AdvertModel = require('../../model/AdvertModel');
-const AdvertPackage = require('../../model/AdvertPackage');
-const SettingModel = require('../../model/SettingModel');
+const Controller = require('../core/controllers/Controller');
+const AdvertModel = require('../core/model/AdvertModel');
+const AdvertPackage = require('../core/model/AdvertPackage');
+const SettingModel = require('../core/model/SettingModel');
 
 class AdminAdvertController extends Controller {
   constructor() { super() }

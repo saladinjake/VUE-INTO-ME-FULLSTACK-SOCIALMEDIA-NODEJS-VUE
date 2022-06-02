@@ -1,9 +1,9 @@
 const _ = require('lodash');
 const Jwt = require('jsonwebtoken');
 
-const Controller = require('../Controller');
-const UserModel = require('../../model/UserModel');
-const CommunicationModel = require('../../model/CommunicationModel');
+const Controller = require('../core/controllers/Controller');
+const UserModel = require('../core/model/UserModel');
+const CommunicationModel = require('../core/model/CommunicationModel');
 
 class CommunicationController extends Controller {
   constructor() { super() }

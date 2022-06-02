@@ -4,12 +4,12 @@ const {ObjectId} = require('mongodb');
 /****************************************************************/
 /************   Custom Module Imports      **********************/
 /****************************************************************/
-const Controller = require('../Controller');
+const Controller = require('../core/controllers/Controller');
 
-const ContestModel = require('../../model/ContestModel');
-const UserModel = require('../../model/UserModel');
-const PostModel = require('../../model/PostModel');
-const PostActivityModel = require('../../model/PostActivityModel');
+const ContestModel = require('../core/model/ContestModel');
+const UserModel = require('../core/model/UserModel');
+const PostModel = require('../core/model/PostModel');
+const PostActivityModel = require('../core/model/PostActivityModel');
 
 class PostController extends Controller {
     constructor() { super() }
