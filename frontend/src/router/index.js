@@ -13,6 +13,11 @@ import Group from '@/components/Group.vue'
 import GroupFeeds from '@/components/GroupFeeds.vue'
 import PlayLists from '@/components/PlaylistLists.vue'
 
+import Admin from '@/components/Admin.vue'
+import AdminPanel from '@/components/admin/App.vue'
+import AdminLogin from '@/components/admin/Login.vue'
+import AdminDashboard from '@/components/admin/Dashboard.vue'
+
 /*eslint-disable*/
 
 Vue.use(VueRouter)
