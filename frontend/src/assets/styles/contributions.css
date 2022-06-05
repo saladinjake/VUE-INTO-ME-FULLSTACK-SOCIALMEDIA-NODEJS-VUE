@@ -1,0 +1,12 @@
+.contr-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 15px;
+    grid-gap:10px;
+}
+.contribute-image{
+     height: 180px;
+  width: 180px;
+  border-radius: 9px;
+}

@@ -1,0 +1,74 @@
+.artiste-connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+.button-con{
+    background: #141521;
+    color: #909096;
+    border: 1.5px solid #04522F;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%
+}
+.button-connected{
+  background: green;
+  color: white;
+  border: 1.5px solid #04522F;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%
+}
+.artiste-fanbase{
+      grid-column: 2/3;
+  grid-row: 3/4;
+  color:#A7ABB0;
+  font-size: 12px;
+}
+.artiste-songs-connect{
+      grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color:#A7ABB0;
+  font-size: 12px;
+}
+.artiste-avatar{
+    border-radius: 30px;
+  grid-column: 1;
+  grid-row: 1/4;
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  border:1px solid whitesmoke
+}
+.artiste-name-feed{
+      color: #0caf12;
+       grid-column: 2/3;
+  grid-row: 1;
+}
+
+.artiste-grid{
+    display: grid;
+  grid-template-columns: 1fr 1fr ;
+   padding: 20px;
+   justify-items: center;
+   grid-gap: 15px
+}
+.artiste-list{
+    background:#24294A;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+.artiste-contents{
+    padding:15px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 1fr 1fr;
+       grid-gap: 5px;
+       justify-items: start;
+       text-transform: capitalize;
+     }
