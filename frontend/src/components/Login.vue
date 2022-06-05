@@ -7,7 +7,7 @@
             <img style="height:50px" src="../assets/logo.png" />
           </router-link>
         </div>
-        <div class="take-care">We take care of your interests - music and social interaction</div>
+        <div class="take-care">Fairy Diary</div>
         <div class="grid-logos-1 hide-on-med-and-down">
           <div class="logos-flex">
             <img class="logo-new" src="../assets/share-music-video.png" /> Share Music & Videos
@@ -286,7 +286,7 @@
       </div>
     </div>
     <div class="login-footer">
-      <div class="naija-text">Naija-P @ 2020</div>
+      <div class="naija-text">Fairy Diary @ 2022</div>
       <div
         class="copywright"
       >About us | Contact Us | Help | Advertise | Terms and Conditions | Privacy Policy | Cookies</div>

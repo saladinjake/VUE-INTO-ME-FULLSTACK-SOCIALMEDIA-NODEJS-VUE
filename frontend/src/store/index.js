@@ -333,8 +333,8 @@ export default new Vuex.Store({
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
-                'app-x-token': DecodedAuthStore.token,
-                'Naijap-Client': 'web'
+                'App-X-token': DecodedAuthStore.token,
+                'App-Client': 'web'
               }
             }).then((response) => {
               console.log(response);

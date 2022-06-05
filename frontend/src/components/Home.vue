@@ -691,6 +691,7 @@ export default {
 
 <style scoped>
 
+@import "../assets/styles/login.css";
 
 .not-sticky {
 }
