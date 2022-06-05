@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>naijap</title>
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <style media="screen">
+      .news-modal .v--modal-box {
+        width: 63% !important;
+        height: 100vh !important;
+        overflow-y: scroll !important;
+      }
+      .advert-user-modal .v--modal-box {
+        width: 63% !important;
+        height: 400px !important;
+        overflow-y: scroll !important;
+      }
+      .advert-user-modal .vs__search, #editModal .vs__search, #createModal .vs__search {
+        padding: 11px !important;
+      }
+      .chat-box li .v-input__slot {
+        width: 200px !important;
+        min-height: auto !important;
+        background: white !important;
+        border: none !important;
+        height: 44px;
+        outline: none !important;
+        margin-left: -5%;
+      }
+      .chat-box li .v-input__slot:focus {
+        border: none;
+      }
+      .ck-content p {
+        color: black !important;
+      }
+      .chatModal .v--modal-box {
+        top: 176px !important;
+        left: 958px !important;
+        width: 336px !important;
+        height: 460px !important;
+        overflow-y: auto !important;
+      }
+
+      .chatModal .v--modal-box::-webkit-scrollbar {
+        width: 1em;
+      }
+
+      .chatModal .v--modal-box::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .chatModal .v--modal-box::-webkit-scrollbar-thumb {
+        background-color: #2c3e50;
+        outline: 1px solid #2c3e50;
+        border-radius: 8px;
+      }
+
+      .admin-form .vs__dropdown-toggle {
+        padding: 10px !important;
+      }
+      .create-user .vs__dropdown-toggle {
+        margin-top: 3% !important;
+        margin-bottom: 15% !important;
+      }
+      .location-dropdown .vs__dropdown-toggle {
+        margin-bottom: 10% !important;
+      }
+      .admin-login {
+        background: transparent !important;
+      }
+      .pagination {
+        float: left !important;
+      }
+      .pagination li a{
+        font-size: 75% !important;
+      }
+      textarea:focus, input:focus {
+        border-bottom: none!important;
+        box-shadow: none!important;
+      }
+      @media (min-width: 320px) {
+        .mobile-group-modal .v--modal-box {
+          width: 89% !important;
+          height: 65vh !important;
+          padding-bottom: 15px;
+          overflow-y: scroll !important;
+          left: 7% !important;
+        }
+        .mobile-chat-modal .v--modal-box {
+          top: 170px !important;
+          left: 100px !important;
+          height: 480px !important;
+        }
+        .chat-mobile-media-modal .v--modal-box {
+          width: 65% !important;
+          left: 123px !important;
+        }
+        #sendUserMailModal .ck-reset{
+          width: 99% !important;
+        }
+      }
+      @media screen 
+      and (min-device-width: 1200px) 
+      and (max-device-width: 1600px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+        .media-query-feed-page-modal .modal-cover .post-note-post .v-input__control {
+          margin-left: -26%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but appneew doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <!-- <script src="iziToast.min.js" type="text/javascript"></script> -->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="<%= BASE_URL %>js/jquery.js"></script>
+    <script src="<%= BASE_URL %>js/bootstrap.min.js"></script>
+    <script src="<%= BASE_URL %>js/modernizr.min.js"></script>
+    <script src="<%= BASE_URL %>js/wow.min.js"></script>
+    <script src="<%= BASE_URL %>js/jquery.scrollTo.min.js"></script>
+    <script src="<%= BASE_URL %>js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="<%= BASE_URL %>assets/chat/moment-2.2.1.js"></script>
+
+    <!-- Counter-up -->
+    <!-- <script src="<%= BASE_URL %>js/waypoints.min.js" type="text/javascript"></script> -->
+    <!-- <script src="<%= BASE_URL %>js/jquery.counterup.min.js" type="text/javascript"></script> -->
+    <!--Morris Chart-->
+
+    <!-- sparkline -->
+    <!-- <script src="<%= BASE_URL %>assets/sparkline-chart/jquery.sparkline.min.js" type="text/javascript"></script> -->
+    <!-- <script src="<%= BASE_URL %>assets/sparkline-chart/chart-sparkline.js" type="text/javascript"></script> -->
+
+    <!-- sweet alerts -->
+    <script src="<%= BASE_URL %>assets/sweet-alert/sweet-alert.min.js"></script>
+    <script src="<%= BASE_URL %>assets/sweet-alert/sweet-alert.init.js"></script>
+
+    <!-- <script src="<%= BASE_URL %>js/jquery.app.js"></script> -->
+    <!-- Chat -->
+    <!-- <script src="<%= BASE_URL %>js/jquery.chat.js"></script> -->
+
+    <!-- Todo -->
+    <!-- <script src="<%= BASE_URL %>js/jquery.todo.js"></script> -->
+  </body>
+</html>
