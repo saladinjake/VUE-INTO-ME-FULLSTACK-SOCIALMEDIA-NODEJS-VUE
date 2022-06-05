@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "aws --profile pixietech-naijap --region eu-west-2 s3 sync ./dist s3://naijap-vue-app --delete"
+    "deploy": "aws --profile your-aws-profilename-here --region eu-west-2 s3 sync ./dist s3://your-s3bucketname-here --delete"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^16.0.0",
