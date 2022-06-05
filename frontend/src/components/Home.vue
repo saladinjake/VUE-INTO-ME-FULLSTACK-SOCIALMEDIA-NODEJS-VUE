@@ -692,6 +692,11 @@ export default {
 <style scoped>
 
 @import "../assets/styles/login.css";
+@import "../assets/styles/leftnav.css";
+@import "../assets/styles/rightnav.css";
+@import "../assets/styles/topnav.css";
+@import "../assets/styles/app.css";
+
 
 .not-sticky {
 }

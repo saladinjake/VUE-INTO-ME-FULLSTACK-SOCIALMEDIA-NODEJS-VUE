@@ -1,0 +1,85 @@
+.padding-r {
+    padding-right: 45px;
+    background-color: red;
+  }
+  .album-covers {
+    background-color: #bdbdbd;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding-left: 7px;
+    grid-column: 2/4;
+  grid-row: 1;
+  }
+
+  /* @media (max-width: 1500px) {
+    .album-covers {
+      background-color: #bdbdbd;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 26.5%;
+      font-size: 18px;
+      padding-left: 7px;
+    }
+  }
+  @media (min-width: 1500px) {
+    .album-covers {
+      background-color: #bdbdbd;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 33.5%;
+      font-size: 18px;
+      padding-left: 7px;
+    }
+    .spacing-left {
+      height: 60px;
+    }
+  }
+  @media (min-width: 1500px) {
+    .album-covers {
+      background-color: #bdbdbd;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 30%;
+  
+      font-size: 18px;
+      padding-left: 7px;
+    }
+  } */
+  .album {
+    height: 30px;
+    width: 35px;
+    cursor: pointer;
+  }
+  .album:hover{
+    height: 50px;
+    width: 45px;
+  }
+  #app {
+    font-family: "Source Sans Pro";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    background: #1a1b27;
+  }
+  
+  #nav {
+    padding: 30px;
+  }
+  
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }

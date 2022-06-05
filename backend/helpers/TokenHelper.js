@@ -1,4 +1,4 @@
-import  UserModel from '../model/UserModel';
+import  UserModel from '../modules/core/model/UserModel';
 /****************************************************************/
 /************   Verify A JWT Token     **************************/
 /****************************************************************/

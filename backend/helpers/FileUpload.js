@@ -10,7 +10,7 @@ import AppConfig from "../config/app";
 import TokenHelper from "./TokenHelper"
 import PostModel from '../modules/core/model/PostModel';
 import UserModel from '../modules/core/model/UserModel';
-import GroupModel from '../model/GroupModel';
+import GroupModel from '../modules/core/model/GroupModel';
 import GalleryModel from '../modules/core/model/GalleryModel';
 import AdvertModel from '../modules/core/model/AdvertModel';
 /****************************************************************/

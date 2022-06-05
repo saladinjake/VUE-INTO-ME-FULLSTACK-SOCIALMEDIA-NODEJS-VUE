@@ -15,6 +15,7 @@ import ExpressFileUpload from "express-fileupload"
 /****************************************************************/
 import AppConfigurations from "./config/app"
 import MongoConnector from "./modules/core/model/Model"
+
 // const CorsConfigurations = require('./config/cors');
 /****************************************************************/
 /******* @author saladin jake (Victor juwa) ********************************/
@@ -22,9 +23,14 @@ import MongoConnector from "./modules/core/model/Model"
 /****************************************************************/
 const App = new Express();
 const Server = Http.createServer(App);
-const Io = SocketIo(Server);
+const Io = SocketIo(Server,{
+	origins: '*:*'
+});
 const Dir = Path.join(__dirname, 'public');
-/******* EXPRESS MIDDLEWARES ***/
+/******* EXPRESS MIDDLEWARES AND ROUTERS ***/
+const Router = require('./endpoints/router.js');
+const Sockets = require('./endpoints/socket.js');
+
 // CorsConfigurations
 App.use(Cors());
 App.use(Express.static(Dir));
@@ -41,6 +47,10 @@ module.exports.connector = (async () => {
 /******* @author saladin jake (Victor juwa) ********************************/
 /******* @desc Express Routes ***********************************/
 /****************************************************************/
+
+Router(App);
+Sockets(Io);
+
 Server.listen(AppConfigurations.appConfig.appPort, () => {
   console.log(AppConfigurations.appConfig.appName + ` api is running on ` + AppConfigurations.appConfig.appPort);
 });
