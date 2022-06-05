@@ -263,7 +263,7 @@
               <template v-if="provinces.length > 0">
                 <option
                   v-for="(state, index) in provinces"
-                  :key="index"
+                  :key="index+ uniqueId()"
                   :value="state.name"
                 >{{ state.name }}</option>
               </template>
@@ -311,6 +311,33 @@ export default {
     await this.fetchCountries();
   },
   methods: {
+  uniqueId() {
+    var result = '';
+    var hexcodes = "0123456789abcdef".split("");
+
+    for (var index = 0; index < 32; index++) {
+        var value = Math.floor(Math.random() * 16);
+
+        switch (index) {
+        case 8:
+            result += '-';
+            break;
+        case 12:
+            value = 4;
+            result += '-';
+            break;
+        case 16:
+            value = value & 3 | 8;
+            result += '-';
+            break;
+        case 20:
+            result += '-';
+            break;
+        }
+        result += hexcodes[value];
+     }
+     return result;
+    },
     changeGender(gender) {
       this.picked = gender;
     },
@@ -993,5 +1020,7 @@ export default {
 };
 </script>
 <style scoped>
-
+.text-danger{
+  color:red;
+}
 </style>
