@@ -40,8 +40,8 @@ class Controller {
   /****************************************************************/
   async validateHeaders(req, UserModel, _) {
     const Payload = {
-      token: req.headers['naijap-x-token'],
-      client: _.toLower(req.headers['naijap-client'])
+      token: req.headers['app-x-token'],
+      client: _.toLower(req.headers['app-client'])
     };
     try {
       const User = new UserModel();

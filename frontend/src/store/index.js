@@ -126,8 +126,8 @@ export default new Vuex.Store({
                         Accept: 'application/json',
                         'Content-Type': 'application/json',
                         'Cache-Control': 'no-cache',
-                        'Naijap-X-Token': DecodedAuthStore.token,
-                        'Naijap-Client': 'web'
+                        'App-X-token': DecodedAuthStore.token,
+                        'App-Client': 'web'
                     }
                 }).then((response) => {
                     if (response.status !== 200) {
@@ -333,7 +333,7 @@ export default new Vuex.Store({
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
-                'Naijap-X-Token': DecodedAuthStore.token,
+                'app-x-token': DecodedAuthStore.token,
                 'Naijap-Client': 'web'
               }
             }).then((response) => {

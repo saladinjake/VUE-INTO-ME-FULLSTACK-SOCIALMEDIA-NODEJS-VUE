@@ -21,8 +21,8 @@ class VerifyJwtToken extends Middleware {
 
     const Response = { status: 200, message: [] };
     const TokenModel = new Model();
-    const Token = req.headers['naijap-x-token'];
-    const userAgent = req.headers['naijap-client'];
+    const Token = req.headers['app-x-token'];
+    const userAgent = req.headers['app-client'];
     const Payload = { token: Token, userAgent: userAgent };
 
     try {
@@ -125,8 +125,8 @@ class VerifyJwtToken extends Middleware {
   async verifyAdminToken(req, res, next) {
     const Response = { status: 200, message: [] };
     const TokenModel = new AdminLoginModel();
-    const Token = req.headers['naijap-x-token'];
-    const userAgent = req.headers['naijap-client'];
+    const Token = req.headers['app-x-token'];
+    const userAgent = req.headers['app-client'];
     const Payload = { token: Token };
 
     try {

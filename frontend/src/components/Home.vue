@@ -120,7 +120,7 @@
             :AuthState="fetchAuthState"
             :UserState="fetchUserState"
           ></LeftNav>
-          
+          <Profile></Profile>
         </div>
         <div v-else-if="getName === 'Notifications'" class="flex-component-feed">
           <LeftNav
@@ -273,7 +273,7 @@ import LeftNav from "./LeftNav";
 import RightNav from "./RightNav";
 import FeedPage from "./FeedPage";
 import Login from "./Login";
-
+import Profile from "./Profile";
 
 import Chat from "./Chat";
 import Connections from "./Connections";

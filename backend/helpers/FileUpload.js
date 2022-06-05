@@ -54,8 +54,8 @@ class FileUpload {
     verifyHeaders = async(req, res) => {
         //!## User and token verification.......
         const Payload = {
-            token: req.headers['naijap-x-token'],
-            client: _.toLower(req.headers['naijap-client'])
+            token: req.headers['app-x-token'],
+            client: _.toLower(req.headers['app-client'])
         };
         const User = await TokenHelper.getUserIdFromToken(Payload);
         if (!User) {

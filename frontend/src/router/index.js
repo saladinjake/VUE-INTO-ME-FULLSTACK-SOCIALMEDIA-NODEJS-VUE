@@ -22,6 +22,17 @@ const routes = [
         name: 'home',
         component: Home,
         children: [
+           {
+                alias: '/profile/:stageName/:userId',
+                path: '/Profile',
+                name: 'Profile',
+                props: true,
+                component: Profile,
+            }, {
+                path: '/home',
+                name: 'Feedpage',
+                component: FeedPage
+            },
             {
                 path: '/connections',
                 name: 'Connections',
