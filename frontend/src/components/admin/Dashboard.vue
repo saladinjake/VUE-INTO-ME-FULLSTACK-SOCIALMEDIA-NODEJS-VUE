@@ -338,8 +338,8 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
           let statusUpdate = await axios.get(this.$baseUrl + '/admin/user/update/status/' + status + '/' + user._id, {
             headers: {
               Accept: 'application/json',
-              'Naijap-X-Token': this.fetchAdminAuth.token,
-              'Naijap-Client': 'web',
+              'App-X-Token': this.fetchAdminAuth.token,
+              'App-Client': 'web',
               'Content-Type': 'application/json',
               'Cache-Control': 'no-cache'
             }
@@ -379,8 +379,8 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
           let userStats = await axios.get(this.$baseUrl + `/admin/users/stats`, {
             headers: {
               Accept: 'application/json',
-              'Naijap-X-Token': this.fetchAdminAuth.token,
-              'Naijap-Client': 'web',
+              'App-X-Token': this.fetchAdminAuth.token,
+              'App-Client': 'web',
               'Content-Type': 'application/json',
               'Cache-Control': 'no-cache',
             }
@@ -407,8 +407,8 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
           let recentUsersA = await axios.get(this.$baseUrl + `/admin/users/recent-users`, {
             headers: {
               Accept: 'application/json',
-              'Naijap-X-Token': this.fetchAdminAuth.token,
-              'Naijap-Client': 'web',
+              'App-X-Token': this.fetchAdminAuth.token,
+              'App-Client': 'web',
               'Content-Type': 'application/json',
               'Cache-Control': 'no-cache',
             }

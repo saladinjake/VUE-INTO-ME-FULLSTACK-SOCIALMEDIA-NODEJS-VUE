@@ -17,6 +17,10 @@ import Admin from '@/components/Admin.vue'
 import AdminPanel from '@/components/admin/App.vue'
 import AdminLogin from '@/components/admin/Login.vue'
 import AdminDashboard from '@/components/admin/Dashboard.vue'
+import AdminUsers from '@/components/admin/Users.vue'
+import AdminUserProfile from '@/components/admin/Profile.vue'
+import AdminCreateUser from '@/components/admin/CreateUser.vue'
+import AdminCategory from '@/components/admin/AdminCategory.vue'
 
 /*eslint-disable*/
 
@@ -83,6 +87,55 @@ const routes = [
               component: Comments
             }
         ]
+    },
+
+
+
+     {
+        path: '/admin-panel',
+        name: 'AdminPage',
+        component: Admin
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: AdminPanel,
+      children: [
+        {
+          path: '/admin/login',
+          name: 'AdminLogin',
+          component: AdminLogin
+        },
+        {
+          path: '/admin/dashboard',
+          name: 'AdminDashboard',
+          component: AdminDashboard
+        },
+
+        {
+          path: '/admin/users/:type',
+          name: 'AdminUsers',
+          component: AdminUsers
+        },
+        {
+          path: '/admin/user/profile/:email',
+          name: 'AdminUserProfile',
+          component: AdminUserProfile
+        },
+        {
+          path: '/admin/user/create/user',
+          name: 'AdminCreateUser',
+          component: AdminCreateUser
+        },
+
+        {
+          path: '/admin/category/filter/:category',
+          name: 'AdminCategory',
+          component: AdminCategory
+        },
+        
+        
+      ]
     },
     {
         path: '/',
