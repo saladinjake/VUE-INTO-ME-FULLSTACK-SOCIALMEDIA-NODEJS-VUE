@@ -21,6 +21,10 @@ import AdminUsers from '@/components/admin/Users.vue'
 import AdminUserProfile from '@/components/admin/Profile.vue'
 import AdminCreateUser from '@/components/admin/CreateUser.vue'
 import AdminCategory from '@/components/admin/AdminCategory.vue'
+import AdminContinents from '@/components/admin/Continent.vue'
+import AdminCountry from '@/components/admin/Country.vue'
+import AdminStates from '@/components/admin/State.vue'
+import AdminSettings from '@/components/admin/AdminSettings.vue'
 
 /*eslint-disable*/
 
@@ -132,6 +136,27 @@ const routes = [
           path: '/admin/category/filter/:category',
           name: 'AdminCategory',
           component: AdminCategory
+        },
+
+        {
+          path: '/admin/location/continent',
+          name: 'AdminContinents',
+          component: AdminContinents
+        },
+        {
+          path: '/admin/location/country',
+          name: 'AdminCountry',
+          component: AdminCountry
+        },
+        {
+          path: '/admin/location/state',
+          name: 'AdminStates',
+          component: AdminStates
+        },
+        {
+          path: '/admin/admin-management',
+          name: 'AdminSettings',
+          component: AdminSettings
         },
         
         
