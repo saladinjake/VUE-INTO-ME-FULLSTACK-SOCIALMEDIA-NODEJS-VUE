@@ -2,7 +2,7 @@
     /* max-width: 1300px; */
     display: flex;
     justify-content: center;
-    background-color:#0c101b;
+    background-color:#fff;
   }
   .create-group-text{
      white-space: nowrap;
@@ -21,8 +21,8 @@ color:#01A01D
 font-size: 20px;
 }
 .body {
-background-color: #0c101b;
-color: white;
+background-color: #fff;
+color: #000;
 height: 60px;
 display: grid;
 grid-template-rows: 1fr;
@@ -31,7 +31,7 @@ align-items: center;
 width: 1200px;
 }
 .link{
-  color: white;
+  color: #000;
 }
 .home:hover {
   /* font-size: 15px; */

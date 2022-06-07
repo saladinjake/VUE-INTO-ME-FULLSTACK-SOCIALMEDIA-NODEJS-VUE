@@ -10,6 +10,8 @@ const TokenModel = require('../core/model/TokenModel');
 const LoginModel = require('../core/model/LoginModel');
 const LoginNotification = require('../../helpers/notification/LoginNotification');
 
+
+// console.log(CryptoJS.AES.encrypt('password', 'kshjfiofiuens-djsdjhdh-secret-password').toString());
 class LoginController extends Controller {
     constructor() {
         super();
@@ -60,15 +62,15 @@ class LoginController extends Controller {
                 const RegistrationToken = 'naijap_reg_' + CryptoJS.SHA256(RandomString);
 
                 const MailPayload = {
-                    sender_name: 'Naijap',
+                    sender_name: 'FairyDiary',
                     sender_email: 'juwavictor@gmail.com',
                     receiver_name: user.lastName + ' ' + user.firstName,
                     receiver_email: user.email,
                     name: user.lastName + ' ' + user.firstName,
-                    subject: `Naijap Activation Link`,
-                    url: 'http://18.221.248.4:3000/api/activate-user-account/' + user.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
+                    subject: `FairyDiary Activation Link`,
+                    url: 'http://localhost:3000/api/activate-user-account/' + user.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
                     company_url: 'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com', //'https://naijap.pixietech.net', //'http://127.0.0.1:8080',
-                    company_name: 'Naijap'
+                    company_name: 'FairyDiary'
                 }
 
                 const Mail = new LoginNotification(MailPayload);
@@ -93,15 +95,15 @@ class LoginController extends Controller {
                 const RegistrationToken = 'naijap_reg_' + CryptoJS.SHA256(RandomString);
 
                 const MailPayload = {
-                    sender_name: 'Naijap',
+                    sender_name: 'FairyDiary',
                     sender_email: 'juwavictor@gmail.com',
                     receiver_name: user.lastName + ' ' + user.firstName,
                     receiver_email: user.email,
                     name: user.lastName + ' ' + user.firstName,
-                    subject: `Naijap Account Suspension`,
-                    url: 'http://18.221.248.4:3000/api/activate-user-account/' + user.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
+                    subject: `FairyDiary Account Suspension`,
+                    url: 'http://localhost:3000/api/activate-user-account/' + user.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
                     company_url: 'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com', //'https://naijap.pixietech.net', //'http://127.0.0.1:8080',
-                    company_name: 'Naijap'
+                    company_name: 'FairyDiary'
                 }
 
                 const Mail = new LoginNotification(MailPayload);

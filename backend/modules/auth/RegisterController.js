@@ -193,15 +193,15 @@ class UserController extends Controller {
           newUser = _.omit(newUser[0], ['_id', 'token']);
 
       const MailPayload = {
-        sender_name: 'Naijap',
+        sender_name: 'FairyDiary',
         sender_email: 'juwavictor@gmail.com',
         receiver_name: lastName + ' ' + firstName,
         receiver_email: email,
         subject: `Congratulations ${lastName} ${firstName} On Creating An Account With Naijap`,
         name: lastName + ' ' + firstName,
-        url: 'http://18.221.248.4:3000/api/activate-user-account/' + email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
-        company_url: 'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com', //'https://naijap.pixietech.net', //'http://127.0.0.1:8080',
-        company_name: 'Naijap'
+        url: 'http://localhost:3000/api/activate-user-account/' + email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
+        company_url: 'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com', 
+        company_name: 'FairyDiary'
       }
 
       const Mail = new RegistrationNotification(MailPayload);
@@ -270,15 +270,15 @@ class UserController extends Controller {
         const RegistrationToken = 'naijap_reg_' + CryptoJS.SHA256(RandomString);
 
         const MailPayload = {
-          sender_name: 'Naijap',
+          sender_name: 'FairyDiary',
           sender_email: 'juwavictor@gmail.com',
           receiver_name: user.lastName + ' ' + user.firstName,
           receiver_email: user.email,
           name: user.lastName + ' ' + user.firstName,
-          subject: `Naijap Activation Link`,
-          url: 'http://18.221.248.4:3000/api/activate-user-account/' + user.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
+          subject: `FairyDiary Activation Link`,
+          url: 'http://localhost:3000/api/activate-user-account/' + user.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
           company_url: 'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com', //'https://naijap.pixietech.net', //'http://127.0.0.1:8080',
-          company_name: 'Naijap'
+          company_name: 'FairyDiary'
         }
 
         const Mail = new RegistrationNotification(MailPayload);
@@ -363,15 +363,15 @@ class UserController extends Controller {
         const RegistrationToken = 'naijap_reg_' + CryptoJS.SHA256(RandomString);
 
         const MailPayload = {
-          sender_name: 'Naijap',
+          sender_name: 'FairyDiary',
           sender_email: 'juwavictor@gmail.com',
           receiver_name: checkEmail.lastName + ' ' + checkEmail.firstName,
           receiver_email: checkEmail.email,
           name: checkEmail.lastName + ' ' + checkEmail.firstName,
-          subject: `Naijap Activation Link`,
-          url: 'http://18.221.248.4:3000/api/activate-user-account/' + checkEmail.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
+          subject: `FairyDiary Activation Link`,
+          url: 'http://localhost:3000/api/activate-user-account/' + checkEmail.email + '/' + RegistrationToken, //'http://localhost:3000/api/activate-user-account/' + email + "/" + RegistrationToken,
           company_url: 'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com', //'https://naijap.pixietech.net', //'http://127.0.0.1:8080',
-          company_name: 'Naijap'
+          company_name: 'FairyDiary'
         }
 
         const Mail = new RegistrationNotification(MailPayload);
@@ -399,9 +399,8 @@ class UserController extends Controller {
         Response.data.push(updatedUser);
 
         const ClientResource = Buffer.from(JSON.stringify(updatedUser)).toString('base64');
-        // res.redirect(`http://127.0.0.1:8080/token/${ClientResource}`);
-        //res.redirect(`http://naijap.pixietech.net/token/${ClientResource}`);
-        res.redirect('http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com/#/?token=' + ClientResource)
+        res.redirect(`http://127.0.0.1:8080/token/${ClientResource}`);
+        // res.redirect('http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com/#/?token=' + ClientResource)
         return;
       }
 

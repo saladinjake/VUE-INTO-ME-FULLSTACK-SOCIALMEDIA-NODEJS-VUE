@@ -68,15 +68,15 @@ class ForgotPasswordController extends Controller {
       const Token = 'naijap_reg_' + CryptoJS.SHA256(RandomString);
 
       const MailPayload = {
-        sender_name: 'Naijap',
+        sender_name: 'FairyDiary',
         sender_email: 'juwavictor@gmail.com',
         receiver_name: User.lastName + ' ' + User.firstName,
         receiver_email: User.email,
         name: User.lastName + ' ' + User.firstName,
-        subject: `Naijap Activation Link`,
-        url: 'http://18.221.248.4:3000/api/forgot-password/' + User.email + '/' + Token,
+        subject: `FairyDiary Activation Link`,
+        url: 'http://localhost:3000/api/forgot-password/' + User.email + '/' + Token,
         company_url: 'http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com',
-        company_name: 'Naijap'
+        company_name: 'FairyDiary'
       }
 
       // Send Notification...
@@ -175,8 +175,10 @@ class ForgotPasswordController extends Controller {
         return;
       }
 
+      res.redirect(`http://127.0.0.1:8080/#/?action=password-reset&email=${Email}`);
+        
+
       // since all went well, we can actually redirect the user back to the desired page now...
-      res.redirect(`http://naijap-vue-app.s3-website.eu-west-2.amazonaws.com/#/?action=password-reset&email=${Email}`);
     } catch (e) {
       Response.status = 500;
       Response.message.push({
