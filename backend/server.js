@@ -42,6 +42,7 @@ module.exports.connector = (async () => {
   const Connection = await new MongoConnector()
   return Connection.dbConnector();
 })();
+
 /************* Database Connector ************/
 /****************************************************************/
 /******* @author saladin jake (Victor juwa) ********************************/
